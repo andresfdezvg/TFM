@@ -4,16 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87ea70d0-135d-464f-8b08-4dd6211a24a9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/TFM.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/POC/Poc_ETL.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/POC/Poc_modelado.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/main.py" afterDir="false" />
+    <list default="true" id="87ea70d0-135d-464f-8b08-4dd6211a24a9" name="Changes" comment="Versión inicial con POC">
+      <change afterPath="$PROJECT_DIR$/App/Descarga_datos/download_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/datos_kaggle/appearances.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/datos_kaggle/club_games.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/datos_kaggle/clubs.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/datos_kaggle/competitions.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/datos_kaggle/game_events.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/datos_kaggle/game_lineups.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/datos_kaggle/games.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/datos_kaggle/player_valuations.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/datos_kaggle/players.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,20 +41,24 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2da1vi7Vw4BSPIqBJT5WC4TFjxB" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.download_data.executor": "Run",
+    "Python.main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Andres\PycharmProjects\TFM\App" />
@@ -97,6 +104,15 @@
       <option name="presentableId" value="Default" />
       <updated>1710231610031</updated>
     </task>
+    <task id="LOCAL-00001" summary="Versión inicial con POC">
+      <option name="closed" value="true" />
+      <created>1710236015412</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1710236015412</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -109,5 +125,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Versión inicial con POC" />
+    <option name="LAST_COMMIT_MESSAGE" value="Versión inicial con POC" />
   </component>
 </project>

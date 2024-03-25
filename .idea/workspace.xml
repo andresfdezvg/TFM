@@ -4,19 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87ea70d0-135d-464f-8b08-4dd6211a24a9" name="Changes" comment="Versión inicial con POC">
-      <change afterPath="$PROJECT_DIR$/App/Descarga_datos/download_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/datos_kaggle/appearances.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/datos_kaggle/club_games.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/datos_kaggle/clubs.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/datos_kaggle/competitions.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/datos_kaggle/game_events.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/datos_kaggle/game_lineups.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/datos_kaggle/games.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/datos_kaggle/player_valuations.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/datos_kaggle/players.csv" afterDir="false" />
+    <list default="true" id="87ea70d0-135d-464f-8b08-4dd6211a24a9" name="Changes" comment="Cambios en POC y creacion de utils_bd">
+      <change afterPath="$PROJECT_DIR$/Code/App/Model/insert_data_into_warehouse.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/App/Model/download_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/App/Model/download_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/App/Model/insert_datalake.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/App/Model/insert_data_into_datalake.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/POC/Poc_modelado.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/POC/Poc_modelado.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/Utils/utils_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/Utils/utils_db.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Code/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +27,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "andresfdezvg"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="75c12d1f-ce30-4eed-9ba0-814df4b2a4d3" />
+        <option name="url" value="https://github.com/andresfdezvg/TFM.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="ProjectErrors" />
@@ -50,16 +59,22 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python.download_data.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/Andres/PycharmProjects/TFM/Code",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Andres\PycharmProjects\TFM\Code" />
+      <recent name="C:\Users\Andres\PycharmProjects\TFM\Code\Utils" />
+      <recent name="C:\Users\Andres\PycharmProjects\TFM\Code\POC" />
+      <recent name="C:\Users\Andres\PycharmProjects\TFM\Code\App\Model" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Andres\PycharmProjects\TFM\App" />
     </key>
@@ -78,7 +93,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Andres\PycharmProjects\TFM\App\main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Code/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -104,13 +119,13 @@
       <option name="presentableId" value="Default" />
       <updated>1710231610031</updated>
     </task>
-    <task id="LOCAL-00001" summary="Versión inicial con POC">
+    <task id="LOCAL-00001" summary="Cambios en POC y creacion de utils_bd">
       <option name="closed" value="true" />
-      <created>1710236015412</created>
+      <created>1710792325251</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1710236015412</updated>
+      <updated>1710792325251</updated>
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
@@ -127,8 +142,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Versión inicial con POC" />
-    <option name="LAST_COMMIT_MESSAGE" value="Versión inicial con POC" />
+    <MESSAGE value="Cambios en POC y creacion de utils_bd" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cambios en POC y creacion de utils_bd" />
   </component>
 </project>

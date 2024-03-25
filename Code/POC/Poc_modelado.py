@@ -5,11 +5,13 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import LabelEncoder
 
+import Code.Utils.utils_db
+from Code.Utils.utils_db import *
+
 
 def poc_modelado():
     # Establecer la conexión al motor de la base de datos PostgreSQL
-    passw = input("Introduce la clave de la base de datos para poc_modelado: ")
-    engine = create_engine(f'postgresql://postgres:{passw}@127.0.0.1:5432/tfmwarehouse_poc')
+    engine = create_engine(f'postgresql://postgres:{Code.Utils.utils_db.passw}@{db_ip}:{db_port}/{bd_warehouse_poc}')
 
     # Ejecutar una consulta SELECT y cargar los resultados en un DataFrame
     query = ("SELECT home_club_name, away_club_name, date, home_club_formation, away_club_formation, result_1x2 "

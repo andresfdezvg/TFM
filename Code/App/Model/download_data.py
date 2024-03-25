@@ -1,9 +1,9 @@
+# Archivo para descargar los datos del repositorio de kaggle
 import os
-import zipfile
 from kaggle.api.kaggle_api_extended import KaggleApi
 
 
-def descargar_descomprimir_y_guardar(nombre_conjunto_datos):
+def descargar_descomprimir_guardar(nombre_conjunto_datos):
     # Directorio donde se guardarán los datos
     directorio_datos = 'datos_kaggle'
 
@@ -19,8 +19,3 @@ def descargar_descomprimir_y_guardar(nombre_conjunto_datos):
     # Mensaje de confirmación
     print(
         f'Los datos del conjunto {nombre_conjunto_datos} han sido descargados y descomprimidos en {directorio_datos}.')
-
-
-# Nombre del conjunto de datos en Kaggle
-nombre_conjunto_datos = 'davidcariboo/player-scores'  # Reemplaza con el nombre del conjunto que deseas descargar
-descargar_descomprimir_y_guardar(nombre_conjunto_datos)

@@ -1,3 +1,4 @@
+# Archivo para guardar la informacion de la base de datos
 db_ip = '127.0.0.1'
 db_port = '5432'
 

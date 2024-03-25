@@ -25,7 +25,5 @@ if __name__ == '__main__':
     a = input("Introduce la clave de la base de datos para poc_etl: ")
     set_password_db(a)
 
-    poc()
-
-    # download_data()
+    download_data()
 

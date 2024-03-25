@@ -1,4 +1,5 @@
-#
+# Archivo para leer los datos de la carpeta de csv e insertarlos en el datalake
+
 import pandas as pd
 from numpy import split
 from sqlalchemy import create_engine
@@ -8,7 +9,7 @@ from Code.Utils.utils_db import *
 
 # Funcion para meter un csv en el datalake
 def load_data_in_datalake_from_csv(csv):
-    # todo
+    # todo CODIGO COPIADO DE LA ETL
     # Establecer la conexión al motor de la base de datos PostgreSQL
     engine = create_engine(f'postgresql://postgres:{Code.Utils.utils_db.passw}@{db_ip}:{db_port}/{bd_datalake_poc}')
 

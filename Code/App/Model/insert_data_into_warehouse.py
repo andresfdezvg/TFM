@@ -6,7 +6,7 @@ from Code.Utils.utils_db import *
 
 # Función para cargar los datos en el almacén de datos desde un DataFrame
 def load_data_into_warehouse_from_df(df):
-    # Transformación: seleccionar una variable de cada tabla
+    # Transformación: seleccionar las variables relevantes
     df_relevant = df[['game_id', 'competition_id', 'season', 'home_club_name', 'away_club_name', 'home_club_goals', 'away_club_goals', 'result_1x2']]
     return df_relevant
 

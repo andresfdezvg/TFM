@@ -2,11 +2,11 @@
 import getpass
 from time import sleep
 
-import Code.Utils.utils_db
-from Code.App.Model.download_data import descargar_descomprimir_guardar
-from Code.POC.Poc_ETL import poc_etl
-from Code.POC.Poc_modelado import poc_modelado
-from Code.Utils.utils_db import set_password_db
+import Utils.utils_db
+from App.Model.download_data import descargar_descomprimir_guardar
+from POC.Poc_ETL import poc_etl
+from POC.Poc_modelado import poc_modelado
+from Utils.utils_db import set_password_db
 
 
 def poc():

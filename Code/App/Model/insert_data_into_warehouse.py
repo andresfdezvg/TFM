@@ -7,14 +7,14 @@ def load_data_into_warehouse_from_df(df):
 
 # Conectarse a la base de datos
     conn = psycopg2.connect(
-    host="tu_host",
-    database="tu_base_de_datos",
-    user="tu_usuario",
-    password="tu_contraseña"
+    host="localhost",
+    database="tfmdatalake_poc",
+    user="postgres",
+    password="123456"
 )
 
 # Crear un cursor para ejecutar consultas SQL
-cur = conn.cursor()
+    cur = conn.cursor()
 
 # Ejecutar una consulta para seleccionar los datos específicos de la tabla games
 cur.execute("""

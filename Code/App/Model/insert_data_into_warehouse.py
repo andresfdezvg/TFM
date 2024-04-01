@@ -17,17 +17,17 @@ def load_data_into_warehouse_from_df(df):
     cur = conn.cursor()
 
 # Ejecutar una consulta para seleccionar los datos específicos de la tabla games
-cur.execute("""
+    cur.execute("""
     SELECT game_id, season, stadium, home_club_name, away_club_id, result1x2
     FROM games
 """)
 
 # Obtener los datos seleccionados
-data = cur.fetchall()
+    data = cur.fetchall()
 
 # Cerrar el cursor y la conexión
-cur.close()
-conn.close()
+    cur.close()
+    conn.close()
 
 def insert_data_into_warehouse():
     pass
